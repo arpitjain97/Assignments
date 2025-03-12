@@ -1,7 +1,7 @@
 const union = require('../union');
 
 describe(union, () => {
-    descirbe('should handle primitive values', () => {
+    describe('should handle primitive values', () => {
         test('should return an array of unique objects from two arrays of objects', () => {
             const array1 = [1, 2, 3];
             const array2 = [2, 3, 4];
@@ -24,7 +24,7 @@ describe(union, () => {
             expect(result).toEqual(expected);
         });
     });
-    descirbe('should handle nested objects', () => {
+    describe('should handle nested objects', () => {
         test('should return an array of unique objects from two arrays of objects', () => {
             const array1 = [{ a: { b: 10 } }];
             const array2 = [{ a: { b: 20 } }];
